@@ -1,23 +1,20 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    int n,h;
-    cin>>n>>h;
-    int i = 0;
-    int count = 0;
-    while (n){
-        cin>>i;
-        if  (i > h){
-            count += 2;
-
-        }else{
-            count += 1;
-
+int main() {
+    int n, h;
+    cin >> n >> h;  
+    
+    int w = n;  
+    for (int i = 0; i < n; i++) {
+        int height;
+        cin >> height;  
+        if (height > h) {
+            w++;  
         }
-        n--j;
     }
-    cout<<count;
-    return 0;
 
+    cout << w;  
+    return 0;
 }
+
